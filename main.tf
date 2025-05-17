@@ -18,6 +18,7 @@ resource "aws_subnet" "public_subnets" {
  availability_zone = element(var.azs, count.index)
 
  tags = {
-   Name = "Public Subnet ${count.index + 1}"
+   Name = "talari public subnets ${count.index + 1}"
  }
 }
+
